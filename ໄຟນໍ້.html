@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ຮ້ານຂາຍເສື້ອຜ້າ - ສິນຄ້າມາໃໝ່</title>
+    <style>
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        /* ຈັດວາງສິນຄ້າ  ຢ່າງ */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+            transition: 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0 8px 0;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .price {
+            color: #ff4757;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .btn-buy {
+            background-color: #ff4757;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn-buy:hover {
+            background-color: #e84118;
+        }
+
+        /* ສ່ວນຂອງຟອມກອກຂໍ້ມູນ ຊື່, ທີ່ຢູ່, ເບີໂທ */
+        .order-section {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            font-family: 'Noto Sans Lao', sans-serif;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .btn-submit {
+            background-color: #2ed573;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            font-size: 1.1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .btn-submit:hover {
+            background-color: #26af5f;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ຮ້ານ BSJ Fashion Shop ອອນລາຍ</h1>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">ສິນຄ້າທັງໝົດ (20 ລາຍການ)</h2>
+        
+        <div class="product-grid">
+    
+            <div class="product-card">
+                <img src="https://image.made-in-china.com/202f0j00bYhveRFEYQqc/Men-s-Wholesale-Denim-Heavy-Weight-Loose-Fit-Straight-Washed-Cargo-Baggy-Jeans.webp" alt="ໂສ້ງຂາກະບອກ">
+                <h3>ໂສ້ງຂາກະບອກ ແຟຊັ່ນ</h3>
+                <p class="price">199,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://st.bigc-cs.com/cdn-cgi/image/format=webp,quality=90/public/media/catalog/product/06/20/2000008561006/2000008561006_1-20251126134710-.jpg" alt="ໂສ້ງຂາກະບອກ">
+                <h3>ໂສ້ງຂາກະບອກ ແຂນຍາວ ແຟຊັ່ນ</h3>
+                <p class="price">199,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+             <div class="product-card">
+                <img src="https://st.bigc-cs.com/cdn-cgi/image/format=webp,quality=90/public/media/catalog/product/44/20/2000008756044/2000008756044_1-20260525142932-.jpg" alt="ໂສ້ງຂາກະບອກ">
+                <h3>ໂສ້ງຂາກະບອກ ແຂນຍາວ ແຟຊັ່ນ</h3>
+                <p class="price">199,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://th-live.slatic.net/p/7c360c0aca5e3f4411e6d852169b4a16.jpg" alt="ໂສ້ງຂາກະບອກ">
+                <h3>ໂສ້ງຂາກະບອກ ແຂນຍາວ ແຟຊັ່ນ</h3>
+                <p class="price">199,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://down-th.img.susercontent.com/file/th-11134207-7r98r-lp0f17i4zhwpb3" alt="ໂສ້ງຂາສັ້ນ">
+                <h3>ໂສ້ງຂາສັ້ນ ແຂນຍາວ ແຟຊັ່ນ</h3>
+                <p class="price">145,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://th-live-01.slatic.net/p/81b93673e630589c6aeb8ead4725b0cc.jpg" alt="ໂສ້ງຂາສັ້ນ">
+                <h3>ໂສ້ງຂາສັ້ນ ແຂນຍາວ ແຟຊັ່ນ</h3>
+                <p class="price">145,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.lazcdn.com/g/p/2fa6053c66f48afdd84317ff51e35376.jpg_720x720q80.jpg" alt="ໂສ້ງຂາສັ້ນ">
+                <h3>ໂສ້ງຂາສັ້ນ ແຂນຍາວ ແຟຊັ່ນ</h3>
+                <p class="price">79,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://down-th.img.susercontent.com/file/th-11134207-7qul4-lgurfgn8g4xgfb" alt="ໂສ້ງຂາສັ້ນ">
+                <h3>ໂສ້ງຂາສັ້ນ ແຂນຍາວ ແຟຊັ່ນ</h3>
+                <p class="price">79,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/27/54/7e/27547e37428a52144eeb40fd22ac0c71.jpg" alt="ເສື້ອຍືດ">
+                <h3>ເສື້ອຍືດ ແຟຊັ່ນ</h3>
+                <p class="price">159,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://down-my.img.susercontent.com/file/sg-11134201-7qvdt-lkexf73ax66q1b" alt="ເສື້ອຍືດ">
+                <h3> ເສື້ອແຟ ຊັ່ນງາມ</h3>
+                <p class="price">159,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://sg-test-11.slatic.net/p/764c544548d72e2afee6ce3a4d6c5831.jpg" alt="ເສື້ອຍືດ">
+                <h3>ເສື້ອຍືດ ແຟຊັ່ນ</h3>
+                <p class="price">159,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://down-th.img.susercontent.com/file/d4b3416dd98cc935966147cc2504f77d" alt="ເສື້ອຍືດ">
+                <h3>ເສື້ອຍືດ ແຟຊັ່ນ</h3>
+                <p class="price">159,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcFyl0V_Y84yHceIPdkbZHA7httCQQt_qFnHLVfLIQbI6_xqSNOsBHrg8&s=10" alt="ເສື້ອດີແພງາມ">
+                <h3>ເສື້ອດີແພງາມ ແຟຊັ່ນ</h3>
+                <p class="price">149,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.central.co.th/_next/image?url=https%3A%2F%2Fassets.central.co.th%2Ffile-assets%2FCDSPIM%2Fweb%2FImage%2FMKP1937%2FLACOSTE-REGULARFITSHORTSLEEVEDLINENSHIRTGREEN-MKP1937312-1.webp&w=384&q=75" alt="ເສື້ອດີແພງາມ">
+                <h3>ເສື້ອດີແພງາມ ແຟຊັ່ນ</h3>
+                <p class="price">149,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://files.gqthailand.com/uploads/types-of-tops-2.jpg" alt="ເສື້ອດີແພງາມ">
+                <h3>ເສື້ອດີແພງາມ ແຟຊັ່ນ</h3>
+                <p class="price">149,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://th-test-11.slatic.net/p/d1e5ab3d579f3ee7732b9382bbbb723d.png_1000x1000q80.jpg" alt="ເສື້ອດີແພງາມ">
+                <h3>ເສື້ອດີແພງາມ ແຟຊັ່ນ</h3>
+                <p class="price">149,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+             <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5pgoeyIni5XAOpYy-vok_DHhl5RKjlbHuZA&s" alt="ເສື້ອຍືດ">
+                <h3>ເສື້ອສະຕຸດຊິ່ ແຟຊັ່ນ</h3>
+                <p class="price">159,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+             <div class="product-card">
+                <img src="https://th-test-11.slatic.net/p/402aa393daff402c205144e75e010e5d.jpg" alt="ເສື້ອຍືດ">
+                <h3>ເສື້ອສະຕຸດຊິ່ ແຟຊັ່ນ</h3>
+                <p class="price">159,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+
+             <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDOl6jQ6pUxHrd_BcvoYGpzsD2aEDsyHnjTl9Y8Mb-gA&s" alt="ເສື້ອຍືດ">
+                <h3>ເສື້ອສະຕຸດຊິ່ ແຟຊັ່ນ</h3>
+                <p class="price">159,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOI5C-gnoG0TkqZiJ_qFuOxJRZJT8HidbKt4r9l4hy-A&s" alt="ເສື້ອຍືດ">
+                <h3>ເສື້ອສະຕຸດຊິ່ ແຟຊັ່ນ</h3>
+                <p class="price">159,000 ກີບ</p>
+                <button class="btn-buy" onclick="alert('ກະລຸນາກອກຂໍ້ມູນຈັດສົ່ງຢູ່ຟອມດ້ານລຸ່ມ!')">ສັ່ງຊື້</button>
+            </div>
+            
+        </div>
+
+        <section class="order-section">
+            <h2 style="text-align: center; margin-bottom: 25px; color: #333;">ຟອມຂໍ້ມູນການຈັດສົ່ງສິນຄ້າ</h2>
+            <form onsubmit="alert('ບັນທຶກຂໍ້ມູນການສັ່ງຊື້ສຳເລັດແລ້ວ! ທາງຮ້ານຈະຕິດຕໍ່ກັບໂດຍໄວ.'); return false;">
+                
+                <div class="form-group">
+                    <label for="name">ຊື່ ແລະ ນາມສະກຸນ:</label>
+                    <input type="text" id="name" placeholder="ກອກຊື່ ແລະ ນາມສະກຸນຂອງເຈົ້າ" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone"><br>ເບີໂທລະສັບ (WhatsApp):</label>
+                    <input type="tel" id="phone" placeholder="ຕົວຢ່າງ: 020 XXXXXXXX" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">ທີ່ຢູ່ຈັດສົ່ງ:</label>
+                    <textarea id="address" rows="4" placeholder="ບອກບ້ານ, ເມືອງ, ແຂວງ ແລະ ຈຸດສັງເກດ ຫຼື ຊື່ຂົນສົ່ງທີ່ຕ້ອງການໃຫ້ຝາກ" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-note">ສິນຄ້າທີ່ຕ້ອງການສັ່ງ:</label>
+                    <input type="text" id="product-note" placeholder="ຕົວຢ່າງ: ເສື້ອຍືດແຟຊັ່ນ ດຳ 1 ຜືນ" required>
+                </div>
+
+                <button type="submit" class="btn-submit">ຢືນຢັນການສັ່ງຊື້</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ຮ້ານ Fashion Shop. ສະຫງວນລິຂະສິດ.</p>
+    </footer>
+
+</body>
+</html>
